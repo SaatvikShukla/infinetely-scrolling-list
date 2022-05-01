@@ -2,17 +2,6 @@
   font-family: 'Roboto', 'Open Sans', sans-serif;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #673ab7;
   min-height: 10vh;
@@ -37,37 +26,8 @@
   padding-left: 24px;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 22px;
-  height: 1.25px;
-  background-color: #fff;
-  margin: 5.5px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 #appContainer {
@@ -179,14 +139,22 @@
 
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
+  background-color: #000;
+
+  
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
+  background-color: #000;
+
 }
 #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
+  background-color: #000;
+
+  
 }
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
@@ -223,10 +191,12 @@
 .menu__btn > span::before {
   content: '';
   top: -8px;
+
 }
 .menu__btn > span::after {
   content: '';
   top: 8px;
+
 }
 
 .menu__box {
@@ -244,21 +214,24 @@
 
   list-style: none;
 
-  background-color: #ECEFF1;
+  background-color: #FFF;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 
   transition-duration: .25s;
+  /* background-image: -webkit-gradient(linear,left top,left bottom,from(#221854),to(#672c8e));
+    background-image: linear-gradient(#221854,#672c8e); */
+    color: white;
 }
 
 .menu__item {
   display: block;
   padding: 12px 24px;
 
-  color: #333;
+  color: #000;
 
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 300;
 
   text-decoration: none;
 
@@ -266,4 +239,16 @@
 }
 .menu__item:hover {
   background-color: #CFD8DC;
+}
+
+.charactor {
+  position: absolute;
+  bottom: 174px;
+  width: 231px;
+  left: 14px;
+}
+
+.leftnav-header {
+  height: 30vh;
+  background-color: #522e92;
 }
