@@ -29,7 +29,7 @@ export default function useMessageFetch () {
         setError(false);
         axios({
             method: "GET",
-            url: "http://message-list.appspot.com/messages",
+            url: "https://message-list.appspot.com/messages",
             params: {limit: limit, pageToken: pageToken}
         }).then((resp) => {
             // console.log('resp', resp.data);
