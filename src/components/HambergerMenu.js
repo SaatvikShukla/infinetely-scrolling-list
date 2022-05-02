@@ -10,7 +10,7 @@ export default function HamburgerMenu() {
             </label>
 
             <div class="menu__box">
-                <h3 className="menu__item">Infinitely Laoding</h3>
+                <h3 className="menu__item">Infinitely Loading</h3>
                 <h4 className="menu__item">Saatvik Shukla <br/> <small>me@saatvikshukla.com</small></h4>
                 <a  href="https://in.linkedin.com/in/saatvikshukla">
                     <h4 className="menu__item">

@@ -23,9 +23,9 @@ function App() {
         </header>
         <div id="appContainer">
           <ShowIfPropTrue prop={!showMainContent}>
-            <div className={'message-card'}>
+            <div className={'message-card center'}>
+              <p>Please note: This app supports touch gesture (Swipe on cards) on mobile view, desktop mode does not support touch events.</p>
               <button onClick={() => {handleShowMessages()}} > Load UI </button>
-              <p>Please note: This app supports touch gesture : Swipe on cards on mobile view, desktop mode does not support touch event.</p>
             </div>
           </ShowIfPropTrue>
 
